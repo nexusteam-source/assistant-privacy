@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私權政策｜智慧助理</title>
+<style>
+  body { margin: 0; background: #fff; color: #1f2933; font: 16px/1.7 -apple-system, "PingFang TC", "Noto Sans TC", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  .meta { color: #616e7c; font-size: 14px; }
+  code { background: #f1f3f5; padding: 1px 4px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<main>
+<h1>隱私權政策</h1>
+<p class="meta">適用對象：智慧助理（Google OAuth 用戶端）｜生效日期：2026-10-13</p>
+
+<p>智慧助理是一套安裝在單一台 Mac mini 上、供特定使用者個人使用的本機助理。使用者透過 Telegram 對助理下指令，由這台電腦上的本機語言模型處理。本政策說明本應用程式透過 Google API 取得哪些資料、如何使用與保存，以及如何撤銷授權。</p>
+
+<h2>一、我們向 Google 要求的權限</h2>
+<p>只要求一項權限：<code>https://www.googleapis.com/auth/calendar.events</code>（檢視及編輯使用者有權存取之 Google 日曆中的活動）。不要求 Gmail、雲端硬碟、聯絡人或其他 Google 資料的權限。</p>
+
+<h2>二、資料的使用方式</h2>
+<ul>
+  <li>只有在使用者明確下指令時，才會查詢、搜尋、建立、修改或移除使用者自己的日曆活動。</li>
+  <li>不會新增受邀者，也不會寄出邀請信。</li>
+  <li>取得的活動內容只用於回答使用者當次的要求，例如列出行程、檢查時間衝突、整理會議準備資料。</li>
+  <li>不用於廣告、不出售、不提供給第三方，也不用來訓練或改良任何人工智慧模型。</li>
+</ul>
+
+<h2>三、資料流向與保存</h2>
+<ul>
+  <li><b>處理地點：</b>活動資料由這台 Mac mini 上的本機語言模型處理，不會送到任何雲端 AI 服務。</li>
+  <li><b>Telegram：</b>使用者的提問與助理的回覆（可能包含活動標題、時間等）會經由 Telegram 傳送，適用 Telegram 的隱私權政策。</li>
+  <li><b>本機紀錄：</b>對話紀錄（包含助理讀到的活動內容）保存在這台電腦的本機資料庫，供後續對話參考；不會上傳到其他伺服器。</li>
+  <li><b>授權憑證：</b>Google 發出的 OAuth 權杖只存在這台電腦上、僅限本機帳號讀取的檔案中，不進入版本控制、日誌或訊息。</li>
+</ul>
+
+<h2>四、遵循 Google API 服務使用者資料政策</h2>
+<p>本應用程式對於從 Google API 取得之資料的使用與傳輸，遵循 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服務使用者資料政策</a>，包括其中的「限制使用」（Limited Use）規定。</p>
+
+<h2>五、撤銷授權與刪除資料</h2>
+<ul>
+  <li>使用者可隨時到 <a href="https://myaccount.google.com/permissions">Google 帳戶的「第三方應用程式與服務」</a> 移除本應用程式的存取權。撤銷後助理會回報需要重新授權，不會再存取日曆。</li>
+  <li>也可請維運者刪除本機的權杖檔與對話紀錄。</li>
+</ul>
+
+<h2>六、聯絡方式</h2>
+<p>對本政策或資料處理有任何問題，請聯絡：本系統維運者，電子郵件<a href="mailto:nexus.tssk@gmail.com">nexus.tssk@gmail.com</a>。</p>
+
+<h2>七、政策變更</h2>
+<p>本政策若有變更，會更新本頁並修改上方的生效日期。</p>
+</main>
+</body>
+</html>
